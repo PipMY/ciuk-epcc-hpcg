@@ -1,12 +1,14 @@
 # CIUK / EPCC benchmark experiments
 
-Private working repository. Contains HPCG source, binaries, inputs, raw results,
-accounting, experiment scripts and preliminary scaling analysis. Nothing has
-been uploaded to a hosting service. HPL is not yet collected here.
+Private repository: https://github.com/PipMY/ciuk-epcc-hpcg . Contains HPCG source,
+binaries, inputs, raw results, accounting, experiment scripts and scaling analysis.
+HPL is not yet collected here.
 
-**No final-duration jobs have been submitted as part of this packaging/tuning
-batch. Final jobs require explicit approval.** Earlier job570811 was cancelled
-and is retained as a failed/cancelled experiment, not a final result.
+**Final1/2/3/4-node jobs were explicitly approved and queued sequentially:**
+572034,572035,572036,572037. See `results/FINAL_STATUS.md` and
+`results/FINAL_SCALING.md` for collected status, measurements and eligibility.
+Do not infer completion from submission. Earlier job570811 was cancelled and
+is retained as a cancelled experiment, not a final result.
 
 ## Start here
 
@@ -14,6 +16,9 @@ and is retained as a failed/cancelled experiment, not a final result.
 - `FINDINGS.md`: findings, limitations and current candidate.
 - `results/SCALING.md`: preliminary 1–2-node weak scaling, including timeout caveat.
 - `results/scaling-short.svg`: preliminary scaling plots.
+- `results/FINAL_STATUS.md`: latest collected final-job status.
+- `results/FINAL_SCALING.md`: final results as they complete; pending rows are not measurements.
+- `results/scaling-final.svg`: final-run scaling plot, generated once results exist.
 - `results/hpcg-cirrus.csv`: extracted Cirrus results and accounting boundaries.
 - `artifacts/cirrus/accounting.psv`: raw Slurm job AND step accounting. Do not sum both.
 - `artifacts/cirrus/experiments/runs/572008/`: same-node ABBA build comparison.
@@ -94,15 +99,28 @@ marked TIMEOUT at61seconds; benchmark and batch steps exited successfully.
 Short3/4-node jobs572014/572015 were cancelled before starting after that timeout.
 They need a more generous walltime and an agreed budget; they have not been retried.
 
-`scripts/scaling-final.NOT-SUBMITTED.slurm` is a prepared template only.
-It targets1920seconds (32minutes), requests exclusive nodes and a45-minute safety limit, and
-requires `HPCG_FINAL_APPROVED=YES`. It has NOT been submitted. Do not submit until
-explicit approval, sufficient team budget and configuration/scaling checks.
-Its default node count is1; each intended1/2/3/4-node job also needs the matching
-`--nodes` and `--ntasks=288*nodes` arguments. Deploy it in the original experiments
-layout described above. Run final jobs sequentially, not on ten nodes concurrently.
+`scripts/scaling-final.slurm` is the approved final script. It targets1920seconds
+(32minutes), requests exclusive nodes and a45-minute safety limit, and requires
+`HPCG_FINAL_APPROVED=YES`. It was submitted for1/2/3/4nodes as jobs
+572034/572035/572036/572037, chained with afterok dependencies. Do not submit duplicates.
+Its default node count is1; each node count requires matching `--nodes` and
+`--ntasks=288*nodes` arguments. Deployment uses the original experiments layout.
+Jobs run sequentially, never on ten nodes concurrently. A validation/duration
+failure blocks later jobs; there are no automatic compute retries.
 
 A32-minute1/2/3/4-node series requires at least1536core-hours before setup.
 The template checks actual timed duration>=1800seconds as well as numerical validation;
 requested time can exceed actual HPCG timed duration, as our short logs demonstrate.
-HPL still needs its own allocation and deliverables. Check SAFE before committing.
+HPL still needs its own allocation and deliverables. SAFE balance remains unconfirmed.
+The45-minute safety limits imply a worst-case2160core-hour ceiling for all four jobs.
+
+## Automatic collection
+
+`scripts/collect-final-results.py` runs locally against the existing authenticated
+tmux SSH session. It polls once per minute, exports terminal-job artefacts with a
+SHA256-verified transfer, regenerates analysis, commits and pushes to GitHub.
+It submits NO compute jobs. Keep this machine and the SSH session alive for automatic
+GitHub updates. A disconnected session or failed push is logged locally at
+`/home/pip/ciuk-final-collector.log`; results remain on Cirrus even if collection stops.
+If necessary, restart the collector after restoring authentication. Do not start
+multiple collectors concurrently. `--once --no-push` performs one local collection pass.

@@ -36,7 +36,7 @@ Available on Cirrus under:
 - [ ] Package exact build commands/environment for every retained binary; audit completeness of initial build.
 - [x] Controlled same-allocation ABBA comparison confirms an8.01% throughput improvement for rows-fast.
 - [ ] Controlled efficiency confirmation: short step energies were inconsistent; cannot infer a firm efficiency gain.
-- [ ] Final >=30-minute VALID HPCG measurements at chosen node counts.
+- [ ] Final >=30-minute VALID HPCG measurements at all four node counts. Explicitly approved and queued as572034/572035/572036/572037; completion/validation still pending.
 - [ ] Complete1/2/3/4-node scaling evidence, as requested by the team. Short1node completed; short2nodes produced VALID output but jobTIMEOUT during cleanup;3/4nodes cancelled before starting. See results/SCALING.md.
 - [ ] Combined machine-readable results with consistent energy boundaries and uncertainty notes.
 - [ ] Tables and plots.
@@ -91,11 +91,12 @@ measurement restricted to the timed phase. Do not add overlapping sacct step ene
 ## Allocation and hand-in logistics
 
 - [ ] Confirm total/remaining team budget in SAFE (not exposed by Slurm association limits).
-- [ ] Agree a budget before further compute submissions.
+- [x] User explicitly approved final1/2/3/4-node submissions; expected1536core-hours plus setup. Safety-limit ceiling2160core-hours. No automatic retries.
 - [ ] Confirm deadline, upload location, archive layout and presentation arrangement.
 - [ ] Clarify HPCG scoring formula and any supplementary problem-size rules.
 - [ ] Clarify whether node counts1,2,4 suffice for scaling requirements.
-- [ ] Back up artefacts off Cirrus and create a portable submission archive.
+- [x] Back up existing artefacts off Cirrus and commit them in a private GitHub repository.
+- [ ] Collect final-run artefacts and produce the final submission archive after all results are checked.
 - [ ] Test the reproduction instructions from a clean build directory.
 
 Inspected Cirrus jobs now include559188,570811,571937,571962,571966,571972,571976,571994,

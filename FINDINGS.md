@@ -78,4 +78,7 @@ This final tuning/packaging batch used19.2recorded core-hours:
 comparison6.72;short1node2.72;short2nodes9.76.
 Queued3/4node tests were cancelled before allocation. No automatic retries.
 All inspected Cirrus jobs together used56.24core-hours, not the full team usage.
-SAFE balance remains unconfirmed. Final jobs need explicit approval.
+SAFE balance remains unconfirmed. The user subsequently explicitly approved the final
+1/2/3/4-node series:jobs572034/572035/572036/572037,32-minute targets,45-minute
+safety limits, afterok chain. Their outcomes are recorded separately in
+results/FINAL_STATUS.md and FINAL_SCALING.md as collected; they are not assumed complete.
