@@ -3,7 +3,7 @@
     "JobID": "572034",
     "Account": "tc079-clusdur",
     "State": "RUNNING",
-    "ElapsedRaw": "233",
+    "ElapsedRaw": "306",
     "AllocCPUS": "288",
     "NNodes": "1",
     "NodeList": "cs-n0324",
