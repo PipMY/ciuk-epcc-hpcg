@@ -5,7 +5,9 @@ binaries, inputs, raw results, accounting, experiment scripts and scaling analys
 HPL is not yet collected here.
 
 **Final1/2/3/4-node jobs were explicitly approved and queued sequentially:**
-572034,572035,572036,572037. See `results/FINAL_STATUS.md` and
+572034,572035,572036,572037. At the user's request, execution priority was changed
+to **1node -> 4nodes -> 2nodes -> 3nodes**, without interrupting the active1-node job.
+See `artifacts/cirrus/experiments/final-execution-order.txt`, `results/FINAL_STATUS.md` and
 `results/FINAL_SCALING.md` for collected status, measurements and eligibility.
 Do not infer completion from submission. Earlier job570811 was cancelled and
 is retained as a cancelled experiment, not a final result.
