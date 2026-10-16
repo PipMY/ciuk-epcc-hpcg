@@ -1,0 +1,15 @@
+
+Lmod is automatically replacing "cce/19.0.0" with "gcc-native/14.2".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+Job 570811 starting at 2026-10-16T12:45:02+01:00
+288 ranks x 1 thread; local 64^3; global 384x384x512; target 1860 seconds
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+[2026-10-16T12:46:51.350] error: *** STEP 570811.0 ON cs-n0373 CANCELLED AT 2026-10-16T12:46:51 DUE to SIGNAL Terminated ***
+[2026-10-16T12:46:51.368] error: *** JOB 570811 ON cs-n0373 CANCELLED AT 2026-10-16T12:46:51 DUE to SIGNAL Terminated ***

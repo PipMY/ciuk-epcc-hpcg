@@ -1,0 +1,102 @@
+CIUK Cluster Challenge 2026 – EPCC Challenge
+Welcome to the EPCC Challenge. By now, you should have completed the Driving
+Test, received your Cirrus access, and become familiar with the system. We expect
+you’ll be referring frequently to the Cirrus documentation. Every team has a capped
+allocation, so save your budget by running short test jobs during setup and tuning.
+To avoid surprises, request dedicated node access using #SBATCH --exclusive in
+your job scripts.
+
+For this challenge, you will run, analyse, and optimise two important benchmarks:
+HPL (High Performance Linpack) and HPCG (High Performance Conjugate
+Gradient). These benchmarks are widely used in the TOP500 and Green500
+rankings to evaluate the performance and energy efficiency of supercomputers. Your
+goal is to balance high performance with energy efficiency. You can scale your
+experiments up to 4 nodes on Cirrus. You will submit your results, binaries, scripts,
+and a short presentation describing your findings.
+
+
+High Performance Linpack (HPL)
+HPL is a compute intensive benchmark that measures how many floating-point
+operations per second (FLOPS) a system can perform. It stresses the CPU and
+floating-point performance, making it a classic benchmark for peak computational
+efficiency.
+
+   •   Compile and run HPL on Cirrus.
+   •   Scale your runs from 1 node up to a maximum of 4 nodes.
+   •   Measure:
+          o Runtime (time-to-solution).
+          o Performance (GFLOPS).
+          o Energy consumption (using the sacct command).
+          o Energy efficiency (GFLOPS/W).
+   •   Analyse the trade-offs between adding more nodes and energy-to-solution.
+   •   Optimise your runs by exploring:
+          o Problem size selection.
+          o Compiler optimisation flags.
+          o MPI/OpenMP configuration.
+
+
+Deliverables
+   •   Compiled binaries of HPL used in your experiments.
+   •   Run scripts and input files so results can be reproduced.
+   •   Results summary (tables/plots of runtime, GFLOPS, Joules, GFLOPS/W).
+   •   Presentation slides (5–7 min) explaining:
+          o Your optimisation strategies.
+          o Best results achieved.
+          o Lessons learned about performance vs energy efficiency.
+High Performance Conjugate Gradient (HPCG)
+HPCG is a benchmark designed to better reflect real-world scientific workloads,
+which are often memory-bound and communication-heavy. HPCG stresses memory
+bandwidth, network latency, and data movement. It is increasingly seen as a
+complement to HPL in benchmarking supercomputers.
+
+   •   Compile and run HPCG on Cirrus.
+   •   Scale your runs from 1 node up to 4 nodes.
+   •   Submitted jobs must have run for at least 30 mins.
+   •   Use short tests (e.g. 1 min) for tuning to save core hours.
+   •   All final logs must pass validation (Result is VALID).
+
+   •   Measure:
+         o Runtime.
+         o Performance (GFLOPS).
+         o Energy consumption.
+         o Energy efficiency (GFLOPS/W).
+
+   •   Explore optimisations such as:
+          o Problem size configuration.
+          o MPI/OpenMP hybridisation.
+          o Compiler flags.
+
+
+
+Deliverables
+   •   Compiled binaries of HPCG used in your experiments.
+   •   Run scripts and input files so results can be reproduced.
+   •   Results summary (tables/plots of runtime, GFLOPS, Joules, GFLOPS/W).
+   •   Presentation slides (5–7 min) explaining:
+          o Your optimisation strategies.
+          o Best results achieved.
+          o Insights on differences between compute-bound (HPL) and memory-
+             bound (HPCG) workloads.
+Scoring Item               Weight   Quality metric
+Performance and energy     25       Measured at best node
+efficiency (GFLOPS/W for            count
+HPL)
+
+
+Performance and energy     25       Measured at best node
+efficiency (GFLOPS/W for            count
+HPCG)
+
+
+Scaling analysis           20       Must demonstrate energy
+                                    vs performance trade-off
+                                    across 1 to 4 nodes
+
+
+Presentation & insight     30       Clarity of analysis and
+                                    lessons learned
+
+
+
+Total                      100
+

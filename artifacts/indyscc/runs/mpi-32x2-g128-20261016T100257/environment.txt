@@ -1,0 +1,22 @@
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1002/bus
+HOME=/home/pip
+LANG=en_US.UTF-8
+LOGNAME=pip
+OLDPWD=/home/pip/ciuk-hpcg
+OMP_DYNAMIC=false
+OMP_NUM_THREADS=2
+OMP_PLACES=cores
+OMP_PROC_BIND=spread
+OMP_WAIT_POLICY=PASSIVE
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PWD=/home/pip/ciuk-hpcg/runs/mpi-32x2-g128-20261016T100257
+SHELL=/bin/bash
+SHLVL=2
+SSH_CLIENT=100.116.150.54 53664 22
+SSH_CONNECTION=100.116.150.54 53664 172.16.0.162 22
+USER=pip
+_=/usr/bin/env
+XDG_RUNTIME_DIR=/run/user/1002
+XDG_SESSION_CLASS=user
+XDG_SESSION_ID=9888
+XDG_SESSION_TYPE=tty

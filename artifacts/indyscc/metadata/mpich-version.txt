@@ -1,0 +1,11 @@
+MPICH Version:      4.2.3
+MPICH Release date: Wed Oct  2 09:35:21 AM CDT 2024
+MPICH ABI:          16:3:4
+MPICH Device:       ch3:nemesis
+MPICH configure:    --prefix=/home/pip/ciuk-hpcg/deps/mpich-shm --disable-fortran --disable-cxx --with-device=ch3:nemesis
+MPICH CC:           gcc    -O2
+MPICH CXX:          g++  
+MPICH F77:            
+MPICH FC:             
+MPICH features:     
+

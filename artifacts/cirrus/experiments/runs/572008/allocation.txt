@@ -1,0 +1,30 @@
+JobId=572008 JobName=hpcg-compare
+   UserId=tc079mart1(10332) GroupId=tc079(6082) MCS_label=N/A
+   Priority=2584 Nice=0 Account=tc079-clusdur QOS=standard
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:04 TimeLimit=00:02:00 TimeMin=N/A
+   SubmitTime=2026-10-16T21:31:51 EligibleTime=2026-10-16T21:31:51
+   AccrueTime=2026-10-16T21:31:51
+   StartTime=2026-10-16T21:31:52 EndTime=2026-10-16T21:33:52 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-16T21:31:52 Scheduler=Main
+   Partition=standard AllocNode:Sid=login01:2403192
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=cs-n0099
+   BatchHost=cs-n0099
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=288 NumTasks=288 CPUs/Task=1 ReqB:S:C:T=0:0:*:1
+   ReqTRES=cpu=288,mem=744768M,node=1,billing=288
+   AllocTRES=cpu=288,mem=744768M,node=1,billing=288,gres/cirrus-node=288,gres/compute-node=288
+   Socks/Node=* NtasksPerN:B:S:C=288:0:*:1 CoreSpec=*
+   MinCPUsNode=288 MinMemoryCPU=2586M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/mnt/nfs/epccfs/projects/tc079/tc079/tc079mart1/hpcg-work/hpcg/experiments/compare-builds.slurm
+   WorkDir=/mnt/nfs/epccfs/projects/tc079/tc079/tc079mart1/hpcg-work/hpcg/experiments
+   StdErr=/mnt/nfs/epccfs/projects/tc079/tc079/tc079mart1/hpcg-work/hpcg/experiments/compare-572008.out
+   StdIn=/dev/null
+   StdOut=/mnt/nfs/epccfs/projects/tc079/tc079/tc079mart1/hpcg-work/hpcg/experiments/compare-572008.out
+   TresPerTask=cpu=1
+   
+

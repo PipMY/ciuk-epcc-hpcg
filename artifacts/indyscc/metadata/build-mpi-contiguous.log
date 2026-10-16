@@ -1,0 +1,93 @@
+[  2%] Building CXX object CMakeFiles/xhpcg.dir/src/main.cpp.o
+[  4%] Building CXX object CMakeFiles/xhpcg.dir/src/CG.cpp.o
+[  7%] Building CXX object CMakeFiles/xhpcg.dir/src/TestCG.cpp.o
+[  9%] Building CXX object CMakeFiles/xhpcg.dir/src/GenerateProblem.cpp.o
+[ 12%] Building CXX object CMakeFiles/xhpcg.dir/src/CG_ref.cpp.o
+[ 17%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeResidual.cpp.o
+[ 17%] Building CXX object CMakeFiles/xhpcg.dir/src/ExchangeHalo.cpp.o
+[ 19%] Building CXX object CMakeFiles/xhpcg.dir/src/GenerateGeometry.cpp.o
+[ 21%] Building CXX object CMakeFiles/xhpcg.dir/src/GenerateProblem_ref.cpp.o
+[ 24%] Building CXX object CMakeFiles/xhpcg.dir/src/CheckProblem.cpp.o
+[ 26%] Building CXX object CMakeFiles/xhpcg.dir/src/OptimizeProblem.cpp.o
+[ 29%] Building CXX object CMakeFiles/xhpcg.dir/src/ReadHpcgDat.cpp.o
+[ 31%] Building CXX object CMakeFiles/xhpcg.dir/src/ReportResults.cpp.o
+[ 34%] Building CXX object CMakeFiles/xhpcg.dir/src/SetupHalo.cpp.o
+[ 36%] Building CXX object CMakeFiles/xhpcg.dir/src/SetupHalo_ref.cpp.o
+[ 39%] Building CXX object CMakeFiles/xhpcg.dir/src/TestSymmetry.cpp.o
+[ 41%] Building CXX object CMakeFiles/xhpcg.dir/src/TestNorms.cpp.o
+[ 43%] Building CXX object CMakeFiles/xhpcg.dir/src/WriteProblem.cpp.o
+[ 46%] Building CXX object CMakeFiles/xhpcg.dir/src/YAML_Doc.cpp.o
+[ 48%] Building CXX object CMakeFiles/xhpcg.dir/src/YAML_Element.cpp.o
+[ 51%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeDotProduct.cpp.o
+[ 53%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeDotProduct_ref.cpp.o
+[ 56%] Building CXX object CMakeFiles/xhpcg.dir/src/finalize.cpp.o
+[ 58%] Building CXX object CMakeFiles/xhpcg.dir/src/init.cpp.o
+[ 60%] Building CXX object CMakeFiles/xhpcg.dir/src/mytimer.cpp.o
+/home/pip/ciuk-hpcg/hpcg/src/YAML_Doc.cpp: In member function ‘std::string YAML_Doc::generateYAML()’:
+/home/pip/ciuk-hpcg/hpcg/src/YAML_Doc.cpp:73:11: warning: ignoring return value of ‘int system(const char*)’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   73 |     system(mkdir_cmd.c_str());
+      |     ~~~~~~^~~~~~~~~~~~~~~~~~~
+[ 63%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeSPMV.cpp.o
+/home/pip/ciuk-hpcg/hpcg/src/YAML_Doc.cpp:62:29: warning: ‘%02d’ directive writing between 2 and 11 bytes into a region of size between 1 and 17 [-Wformat-overflow=]
+   62 |   sprintf (sdate,"%04d.%02d.%02d.%02d.%02d.%02d",ptm->tm_year + 1900, ptm->tm_mon+1,
+      |                             ^~~~
+In file included from /usr/include/stdio.h:980,
+                 from /usr/include/c++/13/cstdio:42,
+                 from /usr/include/c++/13/ext/string_conversions.h:45,
+                 from /usr/include/c++/13/bits/basic_string.h:4109,
+                 from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/ostream:40,
+                 from /usr/include/c++/13/iostream:41,
+                 from /home/pip/ciuk-hpcg/hpcg/src/YAML_Doc.cpp:17:
+In function ‘int sprintf(char*, const char*, ...)’,
+    inlined from ‘std::string YAML_Doc::generateYAML()’ at /home/pip/ciuk-hpcg/hpcg/src/YAML_Doc.cpp:62:11:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:30:34: note: ‘__builtin___sprintf_chk’ output between 20 and 72 bytes into a destination of size 25
+   30 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   31 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   32 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+[ 65%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeSPMV_ref.cpp.o
+[ 68%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeSYMGS.cpp.o
+[ 70%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeSYMGS_ref.cpp.o
+[ 73%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeWAXPBY.cpp.o
+[ 75%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeWAXPBY_ref.cpp.o
+[ 78%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeMG_ref.cpp.o
+[ 80%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeMG.cpp.o
+[ 82%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeProlongation_ref.cpp.o
+[ 85%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeRestriction_ref.cpp.o
+[ 87%] Building CXX object CMakeFiles/xhpcg.dir/src/GenerateCoarseProblem.cpp.o
+[ 90%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeOptimalShapeXYZ.cpp.o
+[ 92%] Building CXX object CMakeFiles/xhpcg.dir/src/MixedBaseCounter.cpp.o
+[ 95%] Building CXX object CMakeFiles/xhpcg.dir/src/CheckAspectRatio.cpp.o
+[ 97%] Building CXX object CMakeFiles/xhpcg.dir/src/OutputFile.cpp.o
+/home/pip/ciuk-hpcg/hpcg/src/OutputFile.cpp: In member function ‘std::string OutputFile::generate()’:
+/home/pip/ciuk-hpcg/hpcg/src/OutputFile.cpp:118:29: warning: ‘%02d’ directive writing between 2 and 11 bytes into a region of size between 1 and 17 [-Wformat-overflow=]
+  118 |   sprintf (sdate,"%04d-%02d-%02d_%02d-%02d-%02d",ptm->tm_year + 1900, ptm->tm_mon+1,
+      |                             ^~~~
+In file included from /usr/include/stdio.h:980,
+                 from /usr/include/c++/13/cstdio:42,
+                 from /usr/include/c++/13/ext/string_conversions.h:45,
+                 from /usr/include/c++/13/bits/basic_string.h:4109,
+                 from /usr/include/c++/13/string:54,
+                 from /usr/include/c++/13/bits/locale_classes.h:40,
+                 from /usr/include/c++/13/bits/ios_base.h:41,
+                 from /usr/include/c++/13/ios:44,
+                 from /usr/include/c++/13/istream:40,
+                 from /usr/include/c++/13/fstream:40,
+                 from /home/pip/ciuk-hpcg/hpcg/src/OutputFile.cpp:16:
+In function ‘int sprintf(char*, const char*, ...)’,
+    inlined from ‘std::string OutputFile::generate()’ at /home/pip/ciuk-hpcg/hpcg/src/OutputFile.cpp:118:11:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:30:34: note: ‘__builtin___sprintf_chk’ output between 20 and 72 bytes into a destination of size 25
+   30 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   31 |                                   __glibc_objsize (__s), __fmt,
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   32 |                                   __va_arg_pack ());
+      |                                   ~~~~~~~~~~~~~~~~~
+[100%] Linking CXX executable xhpcg
+[100%] Built target xhpcg

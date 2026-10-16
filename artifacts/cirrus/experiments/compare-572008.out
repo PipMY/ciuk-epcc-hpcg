@@ -1,0 +1,23 @@
+
+Lmod is automatically replacing "cce/19.0.0" with "gcc-native/14.2".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+Starting step 0 baseline at 2026-10-16T21:31:56+01:00
+Final Summary::HPCG result is VALID with a GFLOP/s rating of=511.49
+Final Summary::Results are valid but execution time (sec) is=9.69871
+Starting step 1 candidate at 2026-10-16T21:32:16+01:00
+Final Summary::HPCG result is VALID with a GFLOP/s rating of=554.179
+Final Summary::Results are valid but execution time (sec) is=9.63131
+Starting step 2 candidate at 2026-10-16T21:32:36+01:00
+Final Summary::HPCG result is VALID with a GFLOP/s rating of=550.764
+Final Summary::Results are valid but execution time (sec) is=9.69127
+Starting step 3 baseline at 2026-10-16T21:32:56+01:00
+Final Summary::HPCG result is VALID with a GFLOP/s rating of=511.492
+Final Summary::Results are valid but execution time (sec) is=9.65894
+Completed ABBA at 2026-10-16T21:33:16+01:00

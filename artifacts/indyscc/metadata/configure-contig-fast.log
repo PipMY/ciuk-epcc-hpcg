@@ -1,0 +1,30 @@
+CMake Deprecation Warning at CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/pip/ciuk-hpcg/deps/mpich-shm/bin/mpicxx - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at /usr/share/cmake-3.28/Modules/FindMPI.cmake:1477 (option):
+  Policy CMP0077 is not set: option() honors normal variables.  Run "cmake
+  --help-policy CMP0077" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+  For compatibility with older versions of CMake, option is clearing the
+  normal variable 'MPI_CXX_SKIP_MPICXX'.
+Call Stack (most recent call first):
+  CMakeLists.txt:55 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found MPI_CXX: /home/pip/ciuk-hpcg/deps/mpich-shm/bin/mpicxx (found version "4.1") 
+-- Found MPI: TRUE (found version "4.1")  
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/pip/ciuk-hpcg/build-contig-fast

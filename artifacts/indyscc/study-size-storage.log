@@ -1,0 +1,40 @@
+STUDY=/home/pip/ciuk-hpcg/studies/size-storage-20261016T195132
+1/20 contiguous local=48 repeat=1 GFLOP/s=68.031 wall=20.4s VALID
+2/20 contiguous local=32 repeat=1 GFLOP/s=75.850 wall=16.5s VALID
+3/20 rows local=16 repeat=1 GFLOP/s=135.381 wall=15.2s VALID
+4/20 contiguous local=16 repeat=1 GFLOP/s=114.501 wall=17.6s VALID
+5/20 contiguous local=24 repeat=1 GFLOP/s=98.470 wall=14.6s VALID
+6/20 contiguous local=64 repeat=1 GFLOP/s=66.389 wall=30.7s VALID
+7/20 rows local=32 repeat=1 GFLOP/s=71.714 wall=16.9s VALID
+8/20 rows local=48 repeat=1 GFLOP/s=64.004 wall=21.7s VALID
+9/20 rows local=64 repeat=1 GFLOP/s=62.306 wall=27.8s VALID
+10/20 rows local=24 repeat=1 GFLOP/s=90.933 wall=15.8s VALID
+11/20 contiguous local=24 repeat=2 GFLOP/s=98.602 wall=15.9s VALID
+12/20 rows local=48 repeat=2 GFLOP/s=64.067 wall=21.6s VALID
+13/20 rows local=24 repeat=2 GFLOP/s=90.724 wall=16.1s VALID
+14/20 contiguous local=64 repeat=2 GFLOP/s=66.560 wall=30.7s VALID
+15/20 contiguous local=48 repeat=2 GFLOP/s=68.629 wall=20.2s VALID
+16/20 contiguous local=32 repeat=2 GFLOP/s=76.190 wall=16.5s VALID
+17/20 contiguous local=16 repeat=2 GFLOP/s=122.060 wall=16.4s VALID
+18/20 rows local=16 repeat=2 GFLOP/s=126.488 wall=16.8s VALID
+19/20 rows local=32 repeat=2 GFLOP/s=71.242 wall=17.1s VALID
+20/20 rows local=64 repeat=2 GFLOP/s=62.230 wall=32.7s VALID
+# Size and storage experiment
+
+64 MPI ranks x 1 thread; pinned physical cores; fixed compiler flags.
+Two repeats, shuffled order; short exploratory runs on a shared node.
+No node energy measured: performance rankings are NOT efficiency rankings.
+
+| Local n | Global n | Data GB | Rows mean GFLOP/s | Contiguous mean GFLOP/s | Change |
+|---:|---:|---:|---:|---:|---:|
+| 16 | 64 | 0.189 | 130.935 | 118.281 | -9.7% |
+| 24 | 96 | 0.635 | 90.829 | 98.536 | +8.5% |
+| 32 | 128 | 1.503 | 71.478 | 76.020 | +6.4% |
+| 48 | 192 | 5.068 | 64.036 | 68.330 | +6.7% |
+| 64 | 256 | 12.008 | 62.268 | 66.474 | +6.8% |
+
+Individual samples and timing breakdowns are in results.csv.
+Smallest size may benefit from cache residency; do not infer final-submission eligibility.
+Changing size changes work and cache behaviour. It is not a fixed-problem speedup.
+Huge-page state was not manipulated; actual allocation page sizes were not verified.
+STUDY_COMPLETE

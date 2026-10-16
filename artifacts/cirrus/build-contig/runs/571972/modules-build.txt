@@ -1,0 +1,10 @@
+
+Currently Loaded Modules:
+  1) craype-x86-turin                  6) cse_env/0.2       11) cray-dsmml/0.3.1
+  2) libfabric/2.3.1                   7) epcc-setup-env    12) cray-mpich/8.1.32
+  3) craype-network-ofi                8) load-epcc-module  13) cray-libsci/25.03.0
+  4) perftools-base/25.03.0            9) gcc-native/14.2   14) PrgEnv-gnu/8.6.0
+  5) xpmem/1.0.1-1.5_1_gfb6998056825  10) craype/2.7.34
+
+ 
+

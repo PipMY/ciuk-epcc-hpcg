@@ -1,0 +1,5 @@
+HPCG benchmark input file
+CIUK EPCC: one node, pure MPI, 31-minute target
+64 64 64
+1860
+6 6 8

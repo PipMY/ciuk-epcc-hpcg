@@ -1,0 +1,37 @@
+total 0
+lrwxrwxrwx 1 root root 0 Aug 27 04:10 intel-rapl -> ../../devices/virtual/powercap/intel-rapl
+lrwxrwxrwx 1 root root 0 Sep 30 08:35 intel-rapl:0 -> ../../devices/virtual/powercap/intel-rapl/intel-rapl:0
+lrwxrwxrwx 1 root root 0 Sep 30 08:35 intel-rapl:0:0 -> ../../devices/virtual/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0
+lrwxrwxrwx 1 root root 0 Sep 30 08:35 intel-rapl:1 -> ../../devices/virtual/powercap/intel-rapl/intel-rapl:1
+lrwxrwxrwx 1 root root 0 Sep 30 08:35 intel-rapl:1:0 -> ../../devices/virtual/powercap/intel-rapl/intel-rapl:1/intel-rapl:1:0
+-r-------- 1 root root 4096 Aug 27 04:10 /sys/class/powercap/intel-rapl:1/energy_uj
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:1/device/intel-rapl:1’ is part of the same file system loop as ‘/sys/class/powercap/intel-rapl:1’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:1/device/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:1/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+-r-------- 1 root root 4096 Oct  8 10:18 /sys/class/powercap/intel-rapl:1/intel-rapl:1:0/energy_uj
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:1/intel-rapl:1:0/device’ is part of the same file system loop as ‘/sys/class/powercap/intel-rapl:1’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:1/intel-rapl:1:0/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+-r-------- 1 root root 4096 Oct  8 10:18 /sys/class/powercap/intel-rapl:0:0/energy_uj
+-r-------- 1 root root 4096 Aug 27 04:10 /sys/class/powercap/intel-rapl:0:0/device/energy_uj
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:0:0/device/intel-rapl:0:0’ is part of the same file system loop as ‘/sys/class/powercap/intel-rapl:0:0’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:0:0/device/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:0:0/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+-r-------- 1 root root 4096 Oct 16 19:51 /sys/class/powercap/intel-rapl/intel-rapl:1/energy_uj
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl/intel-rapl:1/device’ is part of the same file system loop as ‘/sys/class/powercap/intel-rapl’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl/intel-rapl:1/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+-r-------- 1 root root 4096 Oct 16 19:51 /sys/class/powercap/intel-rapl/intel-rapl:0/energy_uj
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl/intel-rapl:0/device’ is part of the same file system loop as ‘/sys/class/powercap/intel-rapl’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl/intel-rapl:0/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+-r-------- 1 root root 4096 Oct 16 19:51 /sys/class/powercap/intel-rapl:0/energy_uj
+-r-------- 1 root root 4096 Oct 16 19:51 /sys/class/powercap/intel-rapl:0/intel-rapl:0:0/energy_uj
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:0/intel-rapl:0:0/device’ is part of the same file system loop as ‘/sys/class/powercap/intel-rapl:0’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:0/intel-rapl:0:0/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:0/device/intel-rapl:0’ is part of the same file system loop as ‘/sys/class/powercap/intel-rapl:0’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:0/device/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:0/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+-r-------- 1 root root 4096 Oct 16 19:51 /sys/class/powercap/intel-rapl:1:0/energy_uj
+-r-------- 1 root root 4096 Oct 16 19:51 /sys/class/powercap/intel-rapl:1:0/device/energy_uj
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:1:0/device/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:1:0/device/intel-rapl:1:0’ is part of the same file system loop as ‘/sys/class/powercap/intel-rapl:1:0’.
+find: File system loop detected; ‘/sys/class/powercap/intel-rapl:1:0/subsystem’ is part of the same file system loop as ‘/sys/class/powercap’.

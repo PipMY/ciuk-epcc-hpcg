@@ -1,0 +1,31 @@
+[  2%] Building CXX object CMakeFiles/xhpcg.dir/src/main.cpp.o
+[  4%] Building CXX object CMakeFiles/xhpcg.dir/src/CG.cpp.o
+[  7%] Building CXX object CMakeFiles/xhpcg.dir/src/TestCG.cpp.o
+[ 12%] Building CXX object CMakeFiles/xhpcg.dir/src/ComputeResidual.cpp.o
+[ 12%] Building CXX object CMakeFiles/xhpcg.dir/src/CG_ref.cpp.o
+[ 14%] Building CXX object CMakeFiles/xhpcg.dir/src/ExchangeHalo.cpp.o
+[ 17%] Building CXX object CMakeFiles/xhpcg.dir/src/GenerateGeometry.cpp.o
+[ 19%] Building CXX object CMakeFiles/xhpcg.dir/src/GenerateProblem.cpp.o
+/home/pip/ciuk-hpcg/hpcg/src/main.cpp:25:10: fatal error: mpi.h: No such file or directory
+   25 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/xhpcg.dir/build.make:76: CMakeFiles/xhpcg.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+/home/pip/ciuk-hpcg/hpcg/src/ExchangeHalo.cpp:23:10: fatal error: mpi.h: No such file or directory
+   23 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+/home/pip/ciuk-hpcg/hpcg/src/ComputeResidual.cpp:21:10: fatal error: mpi.h: No such file or directory
+   21 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/xhpcg.dir/build.make:146: CMakeFiles/xhpcg.dir/src/ExchangeHalo.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/xhpcg.dir/build.make:132: CMakeFiles/xhpcg.dir/src/ComputeResidual.cpp.o] Error 1
+/home/pip/ciuk-hpcg/hpcg/src/GenerateProblem.cpp:22:10: fatal error: mpi.h: No such file or directory
+   22 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/xhpcg.dir/build.make:174: CMakeFiles/xhpcg.dir/src/GenerateProblem.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/xhpcg.dir/all] Error 2
+gmake: *** [Makefile:91: all] Error 2

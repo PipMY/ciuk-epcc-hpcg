@@ -1,0 +1,1 @@
+["/usr/bin/time", "-v", "/home/pip/ciuk-hpcg/deps/mpich-shm/bin/mpiexec", "-bind-to", "none", "-n", "64", "python3", "/home/pip/ciuk-hpcg/rank-exec.py", "/home/pip/ciuk-hpcg/build-mpi-wrapper/xhpcg"]

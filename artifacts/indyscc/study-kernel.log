@@ -1,0 +1,20 @@
+STUDY=/home/pip/ciuk-hpcg/studies/kernel-20261016T201605
+{'config': 'rows-omp', 'repeat': 1, 'valid': True, 'gflops': 117.678, 'wall_seconds': 19.595524384640157, 'timed_seconds': '19.2459', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'rows-fast', 'repeat': 1, 'valid': True, 'gflops': 140.939, 'wall_seconds': 22.751694809645414, 'timed_seconds': '22.4728', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'contig-fast', 'repeat': 1, 'valid': True, 'gflops': 129.564, 'wall_seconds': 21.35227829962969, 'timed_seconds': '21.0943', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'rows-noomp', 'repeat': 1, 'valid': True, 'gflops': 117.645, 'wall_seconds': 23.203798641450703, 'timed_seconds': '22.9026', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'contig-omp', 'repeat': 1, 'valid': True, 'gflops': 114.445, 'wall_seconds': 23.60568594466895, 'timed_seconds': '23.3491', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'contig-noomp', 'repeat': 1, 'valid': True, 'gflops': 120.22, 'wall_seconds': 20.95153685286641, 'timed_seconds': '20.593', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'rows-omp', 'repeat': 2, 'valid': True, 'gflops': 125.098, 'wall_seconds': 22.203865150921047, 'timed_seconds': '21.9124', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'contig-omp', 'repeat': 2, 'valid': True, 'gflops': 115.603, 'wall_seconds': 23.757527365349233, 'timed_seconds': '23.4598', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'rows-fast', 'repeat': 2, 'valid': True, 'gflops': 136.596, 'wall_seconds': 22.65598424244672, 'timed_seconds': '22.3776', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'contig-noomp', 'repeat': 2, 'valid': True, 'gflops': 118.7, 'wall_seconds': 24.458126893267035, 'timed_seconds': '24.2093', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'contig-fast', 'repeat': 2, 'valid': True, 'gflops': 130.408, 'wall_seconds': 25.008648252114654, 'timed_seconds': '24.7246', 'reference_iters': '50', 'optimized_iters': '50'}
+{'config': 'rows-noomp', 'repeat': 2, 'valid': True, 'gflops': 118.61, 'wall_seconds': 22.655240174382925, 'timed_seconds': '22.38', 'reference_iters': '50', 'optimized_iters': '50'}
+contig-omp mean 115.024 samples [114.445, 115.603]
+rows-omp mean 121.388 samples [117.678, 125.098]
+contig-noomp mean 119.46000000000001 samples [120.22, 118.7]
+rows-noomp mean 118.1275 samples [117.645, 118.61]
+contig-fast mean 129.986 samples [129.564, 130.408]
+rows-fast mean 138.76749999999998 samples [140.939, 136.596]
+STUDY_COMPLETE

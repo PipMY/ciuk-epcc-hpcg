@@ -1,0 +1,11 @@
+AnonHugePages:    159744 kB
+ShmemHugePages:        0 kB
+FileHugePages:         0 kB
+HugePages_Total:       2
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        2
+Hugepagesize:       2048 kB
+Hugetlb:            4096 kB
+enabled: [always] madvise never
+defrag: always defer defer+madvise [madvise] never

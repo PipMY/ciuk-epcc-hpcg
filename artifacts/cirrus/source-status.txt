@@ -1,0 +1,7 @@
+?? build-contig/
+?? build-rows-fast/
+?? build/
+?? experiments/
+?? setup/Make.Cirrus
+?? setup/Make.CirrusContig
+?? setup/Make.CirrusRowsFast

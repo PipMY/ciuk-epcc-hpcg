@@ -1,0 +1,31 @@
+JobId=571972 JobName=hpcg-n16-10s
+   UserId=tc079mart1(10332) GroupId=tc079(6082) MCS_label=N/A
+   Priority=2584 Nice=0 Account=tc079-clusdur QOS=short
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:05 TimeLimit=00:02:00 TimeMin=N/A
+   SubmitTime=2026-10-16T21:10:49 EligibleTime=2026-10-16T21:10:49
+   AccrueTime=2026-10-16T21:10:49
+   StartTime=2026-10-16T21:10:50 EndTime=2026-10-16T21:12:50 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-10-16T21:10:50 Scheduler=Main
+   Partition=standard AllocNode:Sid=login01:2403192
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=cs-n0002
+   BatchHost=cs-n0002
+   StepMgrEnabled=Yes
+   NumNodes=1 NumCPUs=288 NumTasks=288 CPUs/Task=1 ReqB:S:C:T=0:0:*:1
+   ReqTRES=cpu=288,mem=744768M,node=1,billing=288
+   AllocTRES=cpu=288,mem=744768M,node=1,billing=288,gres/cirrus-node=288,gres/compute-node=288
+   Socks/Node=* NtasksPerN:B:S:C=288:0:*:1 CoreSpec=*
+   MinCPUsNode=288 MinMemoryCPU=2586M MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   Reservation=shortqos
+   OverSubscribe=NO Contiguous=0 Licenses=(null) LicensesAlloc=(null) Network=(null)
+   Command=/mnt/nfs/epccfs/projects/tc079/tc079/tc079mart1/hpcg-work/hpcg/build-contig/contig16-smoke.slurm
+   WorkDir=/mnt/nfs/epccfs/projects/tc079/tc079/tc079mart1/hpcg-work/hpcg/build-contig
+   StdErr=/mnt/nfs/epccfs/projects/tc079/tc079/tc079mart1/hpcg-work/hpcg/build-contig/hpcg-571972.out
+   StdIn=/dev/null
+   StdOut=/mnt/nfs/epccfs/projects/tc079/tc079/tc079mart1/hpcg-work/hpcg/build-contig/hpcg-571972.out
+   TresPerTask=cpu=1
+   
+

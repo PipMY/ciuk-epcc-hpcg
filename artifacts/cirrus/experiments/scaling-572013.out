@@ -1,0 +1,22 @@
+
+Lmod is automatically replacing "cce/19.0.0" with "gcc-native/14.2".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+Starting 2 nodes at 2026-10-16T21:34:28+01:00
+Finished at 2026-10-16T21:35:25+01:00
+GFLOP/s Summary::Total with convergence overhead=1030.71
+GFLOP/s Summary::Total with convergence and optimization phase overhead=1004.6
+Final Summary::HPCG result is VALID with a GFLOP/s rating of=1004.6
+Final Summary::HPCG 2.4 rating for historical reasons is=1030.71
+Final Summary::Reference version of ComputeDotProduct used=Performance results are most likely suboptimal
+Final Summary::Reference version of ComputeSPMV used=Performance results are most likely suboptimal
+Final Summary::Reference version of ComputeMG used=Performance results are most likely suboptimal
+Final Summary::Reference version of ComputeWAXPBY used=Performance results are most likely suboptimal
+Final Summary::Results are valid but execution time (sec) is=19.0145
+Final Summary::Official results execution time (sec) must be at least=1800

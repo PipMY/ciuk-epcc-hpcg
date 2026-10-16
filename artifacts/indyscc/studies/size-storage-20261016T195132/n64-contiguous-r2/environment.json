@@ -1,0 +1,8 @@
+{
+  "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+  "OMP_NUM_THREADS": "1",
+  "OMP_PLACES": "cores",
+  "OMP_PROC_BIND": "spread",
+  "OMP_DYNAMIC": "false",
+  "OMP_WAIT_POLICY": "PASSIVE"
+}

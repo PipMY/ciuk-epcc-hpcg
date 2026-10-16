@@ -1,0 +1,12 @@
+
+Lmod is automatically replacing "cce/19.0.0" with "gcc-native/14.2".
+
+
+Lmod is automatically replacing "PrgEnv-cray/8.6.0" with "PrgEnv-gnu/8.6.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/25.03.0     2) cray-mpich/8.1.32
+
+Starting HPCG on cs-n0000 at Thu Oct 15 10:44:43 AM BST 2026
+Finished at Thu Oct 15 10:45:48 AM BST 2026
