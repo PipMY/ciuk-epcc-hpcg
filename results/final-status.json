@@ -2,15 +2,15 @@
   {
     "JobID": "572034",
     "Account": "tc079-clusdur",
-    "State": "RUNNING",
-    "ElapsedRaw": "306",
+    "State": "COMPLETED",
+    "ElapsedRaw": "1867",
     "AllocCPUS": "288",
     "NNodes": "1",
     "NodeList": "cs-n0324",
-    "ConsumedEnergyRaw": "",
+    "ConsumedEnergyRaw": "1876027",
     "ExitCode": "0:0",
     "Start": "2026-10-16T21:47:26",
-    "End": "Unknown",
+    "End": "2026-10-16T22:18:33",
     "requested_nodes": 1
   },
   {
@@ -44,14 +44,14 @@
   {
     "JobID": "572037",
     "Account": "tc079-clusdur",
-    "State": "PENDING",
-    "ElapsedRaw": "0",
-    "AllocCPUS": "0",
+    "State": "RUNNING",
+    "ElapsedRaw": "27",
+    "AllocCPUS": "1152",
     "NNodes": "4",
-    "NodeList": "None assigned",
-    "ConsumedEnergyRaw": "0",
+    "NodeList": "cs-n[0180,0182-0184]",
+    "ConsumedEnergyRaw": "",
     "ExitCode": "0:0",
-    "Start": "Unknown",
+    "Start": "2026-10-16T22:18:38",
     "End": "Unknown",
     "requested_nodes": 4
   }
