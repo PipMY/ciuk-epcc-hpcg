@@ -5,6 +5,8 @@ import csv
 import hashlib
 import io
 import json
+import fcntl
+import tempfile
 from pathlib import Path
 import subprocess
 import tarfile
@@ -38,20 +40,26 @@ result = {'jobs': status}
 if args.export:
     audit = root.parent / 'submission-audit'
     audit.mkdir(exist_ok=True)
-    (audit / 'accounting.psv').write_text(accounting)
-    (experiments / 'final-status.json').write_text(json.dumps(status, indent=2) + '\n')
-    archive = audit / 'final-export.tar.gz'
-    with tarfile.open(archive, 'w:gz') as tar:
-        tar.add(audit / 'accounting.psv', arcname='accounting.psv')
-        for name in ['final-scaling-jobs.txt', 'final-status.json', 'scaling-final.slurm', 'remote-export-finals.py']:
-            path = experiments / name
-            tar.add(path, arcname='experiments/' + name)
-        for row in status:
-            if state(row) not in terminal:
-                continue
-            job = row['JobID']
-            for path in [experiments / f'final-{job}.out', experiments / 'runs' / job]:
-                if path.exists():
-                    tar.add(path, arcname=str(path.relative_to(root)))
-    result.update(archive=str(archive), sha256=hashlib.sha256(archive.read_bytes()).hexdigest(), bytes=archive.stat().st_size)
+    with (audit / 'final-export.lock').open('w') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        (audit / 'accounting.psv').write_text(accounting)
+        (experiments / 'final-status.json').write_text(json.dumps(status, indent=2) + '\n')
+        with tempfile.NamedTemporaryFile(dir=audit, suffix='.tar.gz', delete=False) as temporary:
+            archive = Path(temporary.name)
+        with tarfile.open(archive, 'w:gz') as tar:
+            tar.add(audit / 'accounting.psv', arcname='accounting.psv')
+            for name in ['final-scaling-jobs.txt', 'final-status.json', 'scaling-final.slurm', 'remote-export-finals.py']:
+                path = experiments / name
+                tar.add(path, arcname='experiments/' + name)
+            for row in status:
+                if state(row) not in terminal:
+                    continue
+                job = row['JobID']
+                for path in [experiments / f'final-{job}.out', experiments / 'runs' / job]:
+                    if path.exists():
+                        tar.add(path, arcname=str(path.relative_to(root)))
+        digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+        snapshot = audit / f'final-export-{digest}.tar.gz'
+        archive.replace(snapshot)
+        result.update(archive=str(snapshot), sha256=digest, bytes=snapshot.stat().st_size)
 print(json.dumps(result))

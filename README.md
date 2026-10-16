@@ -119,8 +119,21 @@ The45-minute safety limits imply a worst-case2160core-hour ceiling for all four 
 `scripts/collect-final-results.py` runs locally against the existing authenticated
 tmux SSH session. It polls once per minute, exports terminal-job artefacts with a
 SHA256-verified transfer, regenerates analysis, commits and pushes to GitHub.
-It submits NO compute jobs. Keep this machine and the SSH session alive for automatic
-GitHub updates. A disconnected session or failed push is logged locally at
-`/home/pip/ciuk-final-collector.log`; results remain on Cirrus even if collection stops.
-If necessary, restart the collector after restoring authentication. Do not start
-multiple collectors concurrently. `--once --no-push` performs one local collection pass.
+It submits NO compute jobs. A temporary systemd sleep inhibitor is active while
+the local collector lives; it ends automatically when that collector exits. Do not
+power off or force suspend this machine if automatic GitHub updates are wanted.
+A disconnected session or failed push is logged locally at
+`/home/pip/ciuk-final-collector.log`.
+
+A second lightweight watcher, `watch-finals-on-cirrus.py`, runs independently on
+the Cirrus login node. It preserves final accounting and immutable, hash-addressed
+archives even if local SSH disconnects. It holds no GitHub credentials and submits
+no compute jobs/retries. Its log and latest export location are in the original
+Cirrus `experiments/final-watcher.log` and `experiments/overnight-status.json`.
+This fallback cannot push to GitHub; reconnect and collect later if local collection
+stops. Both watchers have a24-hour monitoring limit, not a compute-job time limit.
+Failed prerequisites block/cancel downstream queued jobs; running jobs are not killed
+by the watchers. No automatic retries consume further allocation.
+
+If necessary, restart the local collector after restoring authentication. Do not
+start multiple collectors concurrently. `--once --no-push` performs one collection pass.
