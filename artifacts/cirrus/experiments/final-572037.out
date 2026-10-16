@@ -1,0 +1,13 @@
+Starting 4 nodes at 2026-10-16T22:18:42+01:00
+Finished at 2026-10-16T22:48:00+01:00
+GFLOP/s Summary::Total with convergence overhead=2074.34
+GFLOP/s Summary::Total with convergence and optimization phase overhead=2010.66
+Final Summary::HPCG result is VALID with a GFLOP/s rating of=2010.66
+Final Summary::HPCG 2.4 rating for historical reasons is=2074.34
+Final Summary::Reference version of ComputeDotProduct used=Performance results are most likely suboptimal
+Final Summary::Reference version of ComputeSPMV used=Performance results are most likely suboptimal
+Final Summary::Reference version of ComputeMG used=Performance results are most likely suboptimal
+Final Summary::Reference version of ComputeWAXPBY used=Performance results are most likely suboptimal
+Final Summary::Results are valid but execution time (sec) is=1720.63
+Final Summary::Official results execution time (sec) must be at least=1800
+Actual timed phase below 30 minutes

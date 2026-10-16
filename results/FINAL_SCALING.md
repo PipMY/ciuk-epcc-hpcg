@@ -9,6 +9,6 @@ Missing rows are pending, running or failed: do not treat them as measurements.
 | Nodes | Job | State | GFLOP/s | Mean W | GFLOP/s/W | Weak efficiency | Job s | Joules | Eligible final duration |
 |---:|---:|---|---:|---:|---:|---:|---:|---:|---|
 | 1 | 572034 | COMPLETED | 537.34 | 1004.8 | 0.535 | 100.0% | 1867 | 1876027 | Yes |
-| 2 | 572035 | PENDING | | | | | | | No |
-| 3 | 572036 | PENDING | | | | | | | No |
-| 4 | 572037 | RUNNING | | | | | | | No |
+| 2 | 572035 | CANCELLED by 10332 | | | | | | | No |
+| 3 | 572036 | CANCELLED by 10332 | | | | | | | No |
+| 4 | 572037 | FAILED | 2010.66 | 4031.9 | 0.499 | 93.5% | 1762 | 7104128 | No |

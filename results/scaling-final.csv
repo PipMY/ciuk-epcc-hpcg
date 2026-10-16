@@ -1,2 +1,3 @@
 job_id,step,state,nodes,ranks,threads,local_grid,global_grid,memory_GB,valid,timed_seconds,job_or_step_seconds,gflops,energy_J,energy_scope,average_W,gflops_per_W,allocated_core_hours,final_duration_eligible,log,weak_scaling_efficiency
 572034,,COMPLETED,1,288,1,16x16x16,96x96x128,0.848596,True,1852.09,1867.0,537.34,1876027.0,whole-job,1004.8350294590251,0.5347544464978383,149.36,True,artifacts/cirrus/experiments/runs/572034/HPCG-Benchmark_3.1_2026-10-16_22-18-25.txt,1.0
+572037,,FAILED,4,1152,1,16x16x16,128x192x192,3.39319,True,1720.63,1762.0,2010.66,7104128.0,whole-job,4031.854710556186,0.49869356520603236,563.84,False,artifacts/cirrus/experiments/runs/572037/HPCG-Benchmark_3.1_2026-10-16_22-47-52.txt,0.9354691629136115
