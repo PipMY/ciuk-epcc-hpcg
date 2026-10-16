@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
-<rect width="960" height="360" fill="white"/>
-<g font-family="sans-serif" fill="#222">
+<rect width="960" height="360" fill="white"/><g font-family="sans-serif" fill="#222">
 <text x="55" y="30" font-size="14">Performance (GFLOP/s)</text>
 <path d="M 55 55 V 280 H 290" fill="none" stroke="#555"/>
 <text x="47" y="284.0" font-size="10" text-anchor="end">0</text>
@@ -34,4 +33,4 @@
 <circle cx="763.3333333333334" cy="100.92517122567324" r="4" fill="#245b8a"/><text x="763.3333333333334" y="300" font-size="11" text-anchor="middle">2</text>
 <polyline points="685.0,84.3478260869565 763.3333333333334,100.92517122567324" fill="none" stroke="#245b8a" stroke-width="2"/>
 <text x="790" y="320" font-size="12">Nodes</text>
-<text x="55" y="346" font-size="11">PRELIMINARY: short runs; energy includes setup; no final-duration runs submitted.</text></g></svg>
+<text x="55" y="346" font-size="11">Preliminary short-run weak scaling: consult result table for state, duration eligibility and measurement caveats.</text></g></svg>

@@ -1,0 +1,58 @@
+[
+  {
+    "JobID": "572034",
+    "Account": "tc079-clusdur",
+    "State": "RUNNING",
+    "ElapsedRaw": "233",
+    "AllocCPUS": "288",
+    "NNodes": "1",
+    "NodeList": "cs-n0324",
+    "ConsumedEnergyRaw": "",
+    "ExitCode": "0:0",
+    "Start": "2026-10-16T21:47:26",
+    "End": "Unknown",
+    "requested_nodes": 1
+  },
+  {
+    "JobID": "572035",
+    "Account": "tc079-clusdur",
+    "State": "PENDING",
+    "ElapsedRaw": "0",
+    "AllocCPUS": "0",
+    "NNodes": "2",
+    "NodeList": "None assigned",
+    "ConsumedEnergyRaw": "0",
+    "ExitCode": "0:0",
+    "Start": "Unknown",
+    "End": "Unknown",
+    "requested_nodes": 2
+  },
+  {
+    "JobID": "572036",
+    "Account": "tc079-clusdur",
+    "State": "PENDING",
+    "ElapsedRaw": "0",
+    "AllocCPUS": "0",
+    "NNodes": "3",
+    "NodeList": "None assigned",
+    "ConsumedEnergyRaw": "0",
+    "ExitCode": "0:0",
+    "Start": "Unknown",
+    "End": "Unknown",
+    "requested_nodes": 3
+  },
+  {
+    "JobID": "572037",
+    "Account": "tc079-clusdur",
+    "State": "PENDING",
+    "ElapsedRaw": "0",
+    "AllocCPUS": "0",
+    "NNodes": "4",
+    "NodeList": "None assigned",
+    "ConsumedEnergyRaw": "0",
+    "ExitCode": "0:0",
+    "Start": "Unknown",
+    "End": "Unknown",
+    "requested_nodes": 4
+  }
+]
